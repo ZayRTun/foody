@@ -8,7 +8,90 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Fontawesome
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
 .navbar-laravel {
-  background-color: #fff;
+  background-color: $yellow;
+  color: $red;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+.navbar-light .navbar-brand {
+    color: $red;
+}
+
+.jumbotron {
+    border-radius: 0;
+    height: 400px;
+    background-image: url('~/images/pexels-photo-941869.jpeg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.jumbotron .select-area {
+    border-radius: 5px;
+    background: rgba(70, 74, 56, 0.4);
+    padding: 25px;
+}
+
+.addressForm {
+    display: flex;
+}
+
+.outerbox1 {
+    border-radius: 5px 0 0 5px;
+    background: url('~/images/caret16.png') no-repeat 95% 0;
+    background-color: white;
+    height: 50px;
+    overflow: hidden;
+}
+.outerbox2 {
+    width: 50%;
+}
+
+.box {
+    border: none;
+    margin: 0;
+    height: 50px;
+    padding: 0.5em;
+}
+select {
+}
+.box1 {
+    background: transparent;
+    width: 180px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    appearance: none;
+}
+
+.box1:focus {
+    outline: none;
+}
+
+.box2 {
+    width: 100%;
+    background: #efefef;
+    box-sizing: border-box;
+    width:100%;
+    border: none;
+    flex-grow: 1;
+}
+
+.box2:focus {
+  outline: none;
+}
+
+.box3 {
+    width: 25%;
+    padding: 0.5em 1em;
+    background: $yellow;
+    color: $red;
+    font-weight: bolder;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
