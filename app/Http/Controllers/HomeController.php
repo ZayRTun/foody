@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Collection;
 use App\User;
 use App\Address;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
+
     /**
      * Create a new controller instance.
      *
@@ -37,6 +39,7 @@ class HomeController extends Controller
 
     public function store(User $user)
     {
+        $collections = Collection::all();
         // if (!$user->address()->count() > 0) {
         //     dd("Calling from store");
         //     $user->address()->create([
@@ -46,7 +49,7 @@ class HomeController extends Controller
         $address = $user->address()->latest()->first();
 
         if ($this->ifStringIsSame($address)) {
-            return view('collections', compact('address'));
+            return view('collections', compact('address', 'collections'));
         } else {
             $user->address()->create([
                 'township' => request('township'),
@@ -55,7 +58,7 @@ class HomeController extends Controller
 
             $address = $user->address()->latest()->first();
 
-            return view('collections', compact('address'));
+            return view('collections', compact('address', 'collections'));
         }
     }
 

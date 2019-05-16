@@ -16105,6 +16105,56 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Brands";
 }
 
+.topbar {
+  width: 100%;
+  background-color: #DA0000;
+  height: 53px;
+  color: #FFEC00;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.fullHeight .col-2,
+.col-8 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bolder;
+}
+
+.fullHeight .col-2:hover {
+  color: #00ffdd;
+  cursor: pointer;
+}
+
+.collectionCard:hover {
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgba(0, 4, 0, 0.9);
+  transition-duration: 400ms;
+}
+
+.optionInfo {
+  background: #F8F9FA;
+  z-index: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px 15px;
+}
+
+.menuCard {
+  border: 1px solid #DA0000;
+  transition: ease-out 700ms;
+}
+
+.menuCard:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 3px rgba(238, 0, 0, 0.2);
+  transition: ease-in 500ms;
+}
+
 .navbar-laravel {
   background-color: #FFEC00;
   color: #DA0000;

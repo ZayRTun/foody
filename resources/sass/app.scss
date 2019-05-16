@@ -13,6 +13,10 @@
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/brands.scss";
 
+// Page Imports
+@import 'collections.scss';
+@import 'menus.scss';
+
 .navbar-laravel {
   background-color: $yellow;
   color: $red;
@@ -94,4 +98,3 @@ select {
     border: none;
     border-radius: 0 5px 5px 0;
 }
-
