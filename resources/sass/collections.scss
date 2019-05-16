@@ -1,0 +1,28 @@
+
+.topbar {
+    width: 100%;
+    background-color: $red;
+    height: 53px;
+    color: $yellow;
+}
+
+.fullHeight {
+    height: 100%;
+}
+.fullHeight .col-2, .col-8 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bolder;
+}
+
+.fullHeight .col-2:hover {
+    color: #00ffdd;
+    cursor: pointer;
+}
+
+.collectionCard:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 4, 0, 0.9);
+    transition-duration: 400ms;
+}
